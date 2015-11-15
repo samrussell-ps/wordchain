@@ -1,0 +1,2 @@
+class ChainFinder
+end
