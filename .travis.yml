@@ -4,4 +4,4 @@ rvm:
 script: rspec spec
 addons:
   code_climate:
-    repo_token: 
+    repo_token: 62670f53504c81785788a953126505793cecb57b7ac37b6c4036afcc6cf76d1e
