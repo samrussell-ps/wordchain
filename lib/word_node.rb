@@ -8,6 +8,7 @@ class WordNode
 
   def neighbors
     @word_list.select { |word_from_list| one_letter_different?(word_from_list) }
+      .map { |word_from_list| WordNode.new(word_from_list, @word_list) }
   end
 
   def ==(other)
@@ -24,7 +25,7 @@ class WordNode
 
   private
 
-  def one_letter_different(word_from_list)
+  def one_letter_different?(word_from_list)
     return false if word_from_list.length != @word.length
 
     number_of_different_chars = @word.chars.zip(word_from_list.chars).count { |pair| pair[0] != pair[1] }

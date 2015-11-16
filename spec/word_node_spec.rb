@@ -27,6 +27,7 @@ describe WordNode do
         'gat',
         'hat',
         'kat',
+        'jat',
         'lat',
         'mat',
         'nat',

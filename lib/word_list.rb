@@ -21,7 +21,7 @@ class WordList
 
   def load_words
     File.open(WORD_FILE) do |word_file|
-      @words = word_file.readlines.map { |line| line.downcase.chomp }
+      @words = word_file.readlines.map { |line| line.downcase.chomp }.uniq
     end
   end
 end
